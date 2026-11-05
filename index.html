@@ -52,7 +52,7 @@
       autoLoad: true,
       yaw: 0,
       pitch: 0,
-      hfov: 95,
+      hfov: 110,
       minHfov: 65,
       maxHfov: 110,
       autoRotate: 0,
@@ -80,7 +80,7 @@
           typeof DeviceOrientationEvent !== 'undefined' &&
           typeof DeviceOrientationEvent.requestPermission === 'function'
         ) {
-          var permission =
+          const permission =
             await DeviceOrientationEvent.requestPermission();
 
           if (permission !== 'granted') {
